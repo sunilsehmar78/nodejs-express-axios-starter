@@ -1,0 +1,18 @@
+.navbar {
+    background: #96d0bb;
+}
+
+h1 {
+    color: #96d0bb;
+     text-shadow:
+         3px 3px 0 #000,
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+  }
+
+
+.categories h2 {
+    margin-top: 5rem;
+}
