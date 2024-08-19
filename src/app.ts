@@ -4,6 +4,7 @@ import bodyParser from "body-parser";
 import session from "express-session";
 
 import { getAllDatabases } from "./controllers/TestController";
+import { getMeal } from "./controllers/SingleMealController";
 
 const app = express();
 
@@ -30,3 +31,5 @@ app.listen(3000, () => {
 });
 
 app.get('/', getAllDatabases);
+
+app.get('/singleMeal', getMeal);
