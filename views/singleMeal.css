@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    display: flex;
+}
+
+h1, .titleMain{
+    text-align: center;
+    color: darkmagenta;
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.pageDesc {
+    color: darkgoldenrod;
+    margin: 20px 50px;
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+img{
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    height: 275px;
+    border-style: none solid solid none;
+}
+
+.recipe-card{
+    width: 100%;
+    background-color: #96d0bb;
+    margin: 20px auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+}
+
+.recipe-content{
+    padding: 20px;
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+
+.recipe-card h3,
+.recipe-card a{
+    text-transform: uppercase;
+}
+
+.recipe-card .feature{
+    border: 2px solid darkred;
+}
+
+ul li h4{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.recipe-card a {
+    background-color: #96d0bb;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.recipe-info {
+    display: inline-block;
+    width: 300px;
+}
+
+.category, .countryOfOrigin{
+    color: darkgoldenrod;
+    margin-bottom: 20px;
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.category{
+    float: left;
+    margin-left: 10%;
+}
+
+.countryOfOrigin{
+    float:right;
+    margin-right: 10%;
+}
+
+.test{
+    padding-top: 13%;
+}
+
+.ingredients h3, .instructions h3 {
+    text-align: center;
+    color: azure;
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
