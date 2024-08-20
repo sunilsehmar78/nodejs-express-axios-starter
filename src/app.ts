@@ -3,7 +3,6 @@ import nunjucks from "nunjucks";
 import bodyParser from "body-parser";
 import session from "express-session";
 
-import { getMealCategoryList } from "./services/MealCategoryListService";
 import { getAllMeals } from "./controllers/MealCategoryListController";
 import { getMeal } from "./controllers/SingleMealController";
 import { getNameResult } from "./controllers/SeachByNameController";

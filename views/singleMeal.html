@@ -22,10 +22,10 @@
                 <a class="nav-link active" aria-current="page" href="/singleMeal">Randomize</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">By Area</a>
+                <a class="nav-link" href="/mealSearchResult">By Area</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">By Category</a>
+                <a class="nav-link" href="/mealCategoryList">By Category</a>
               </li>
             </ul>
             <form class="d-flex" role="search" method="post" action="/search/">
@@ -148,6 +148,31 @@
                     </section>
                 </div>
             </div>
+
+            <table>
+                <th scope="col">
+                    {% for i in range(0, 13) %}
+                    <tr >
+                        <h3>Category Item: {{mealList.categories[i].strCategory}}</h3>
+                        <p>Category ID: {{mealList.categories[i].idCategory}}</p>
+                        <p>Description: {{mealList.categories[i].strCategoryDescription}}</p>
+                        <img src="{{mealList.categories[i].strCategoryThumb}}" alt="Image">
+                        <p></p>
+                    </tr>
+                {% endfor %}
+                </th>
+                <th scope="col">
+                    {% for i in range(0, 13) %}
+                    <tr>
+                        <h3>Category Item: {{mealList.categories[i].strCategory}}</h3>
+                        <p>Category ID: {{mealList.categories[i].idCategory}}</p>
+                        <p>Description: {{mealList.categories[i].strCategoryDescription}}</p>
+                        <img src="{{mealList.categories[i].strCategoryThumb}}" alt="Image">
+                        <p></p>
+                    </tr>
+                {% endfor %}
+                </th>
+            </table>
                 
 
 
