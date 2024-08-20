@@ -5,6 +5,8 @@ import session from "express-session";
 
 import { getMealCategoryList } from "./services/MealCategoryListService";
 import { getAllMeals } from "./controllers/MealCategoryListController";
+import { getMeal } from "./controllers/SingleMealController";
+import { getNameResult } from "./controllers/SeachByNameController";
 
 const app = express();
 
@@ -17,6 +19,11 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
   extended: true
 }))
+
+// Specifing folder from where to serve static files (gets rid of MIME type CSS issue)
+app.use(express.static("views"));
+// Specifying folder from where to fetch images
+app.use('/assets', express.static('./src/assets')); 
 
 app.use(session({ secret: 'SUPER_SECRET', cookie: { maxAge: 28800000 }}));
 
@@ -31,3 +38,10 @@ app.listen(3000, () => {
 });
 
 app.get('/Mealslist', getAllMeals);
+app.get('/', (req: express.Request, res: express.Response) => {
+  res.render('index.html'
+  );
+});
+
+app.get('/singleMeal', getMeal);
+app.post('/search/', getNameResult);
