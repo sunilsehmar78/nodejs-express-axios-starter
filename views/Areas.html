@@ -35,16 +35,18 @@
     </nav>
 
     <div class="container">
-        <h1 class="text-center my-4 Areas">List of All Areas</h1>
+        <div class="card feature">
+            <h1 class="text-center my-4 Areas">List of All Areas</h1>
 
-        <div class="row">
-            {% for i in range(0, AreaList.meals | length) %}
-                <div class="col-md-4 mb-3"> 
-                    <div class="list-group-item border border-dark ps-1"> 
-                        <p class="mb-0">{{ AreaList.meals[i].strArea }}</p>
+            <div class="row">
+                {% for i in range(0, AreaList.meals | length) %}
+                    <div class="col-md-4 mb-3"> 
+                        <div class="list-group-item border border-dark ps-1"> 
+                            <p class="mb-0">{{ AreaList.meals[i].strArea }}</p>
+                        </div>
                     </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 
