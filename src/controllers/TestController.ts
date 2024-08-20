@@ -1,6 +1,6 @@
 import express from "express";
-import { getDatabases } from "../services/TestService"
+import { getAreas } from "../services/AreaService"
 
-export const getAllDatabases = async (req: express.Request, res: express.Response): Promise<void> => {
-    res.render('databaseList.html', { databases: await getDatabases() });
+export const getAllAreas = async (req: express.Request, res: express.Response): Promise<void> => {
+    res.render('Areas.html', { AreaList: await getAreas() });
 }
