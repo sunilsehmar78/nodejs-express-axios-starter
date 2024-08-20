@@ -3,9 +3,13 @@ import nunjucks from "nunjucks";
 import bodyParser from "body-parser";
 import session from "express-session";
 
+
+import { getAllAreas } from "./controllers/AreaController";
+
 import { getAllMeals } from "./controllers/MealCategoryListController";
 import { getMeal } from "./controllers/SingleMealController";
 import { getNameResult } from "./controllers/SeachByNameController";
+
 
 const app = express();
 
@@ -44,3 +48,4 @@ app.get('/', (req: express.Request, res: express.Response) => {
 
 app.get('/singleMeal', getMeal);
 app.post('/search/', getNameResult);
+app.get('/Areas', getAllAreas);
