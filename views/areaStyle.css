@@ -24,3 +24,13 @@
 .home-btn {
     background: #96d0bb;
 }
+
+.Areas{
+    color: #96d0bb;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
