@@ -3,7 +3,10 @@ import nunjucks from "nunjucks";
 import bodyParser from "body-parser";
 import session from "express-session";
 
+
 import { getAllAreas } from "./controllers/AreaController";
+
+import { getAllMeals } from "./controllers/MealCategoryListController";
 import { getMeal } from "./controllers/SingleMealController";
 import { getNameResult } from "./controllers/SeachByNameController";
 
@@ -37,6 +40,7 @@ app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
 
+app.get('/Mealslist', getAllMeals);
 app.get('/', (req: express.Request, res: express.Response) => {
   res.render('index.html'
   );
