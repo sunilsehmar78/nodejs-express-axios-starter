@@ -36,8 +36,208 @@
     {% if not searchedMeal.meals %} 
         <h1>Not Found</h1>
     {% else %}
-    <h1>Name: {{searchedMeal.meals[0].strMeal}}</h1>
-    <h2>Country of Origin: {{searchedMeal.meals[0].strArea}}</h2>
+      <h1 class="text-center mt-5">{{searchedMeal.meals[0].strMeal}}</h1>
+    <div class="mt-5 d-flex justify-content-center gap-5">
+      <div>
+        <h2 class="align-self-start">Country of Origin: {{searchedMeal.meals[0].strArea}}</h2>
+        <h2 class="align-self-start">Category: {{searchedMeal.meals[0].strCategory}}</h2>
+        <h2 class="align-self-start">Area: {{searchedMeal.meals[0].strCategory}}</h2>
+        <div class="w-50">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Ingredient</th>
+                <th scope="col">Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              {% if searchedMeal.meals[0].strIngredient1 %}
+              <tr>
+                <th scope="row">
+                    1
+                </th>
+                <td>
+                    {{ searchedMeal.meals[0].strIngredient1 }}
+                  </td>
+                <td>
+                    {{ searchedMeal.meals[0].strMeasure1 }}</td>
+              </tr>
+                {% endif %} 
+
+              {% if searchedMeal.meals[0].strIngredient1 %}
+              <tr>
+                <th scope="row">
+                    2
+                </th>
+                <td>
+                    {{ searchedMeal.meals[0].strIngredient2 }}
+                  </td>
+                <td>
+                    {{ searchedMeal.meals[0].strMeasure2 }}</td>
+              </tr>
+                {% endif %} 
+
+              {% if searchedMeal.meals[0].strIngredient3 %}
+              <tr>
+                <th scope="row">
+                    3
+                </th>
+                <td>
+                    {{ searchedMeal.meals[0].strIngredient3 }}
+                  </td>
+                <td>
+                    {{ searchedMeal.meals[0].strMeasure3 }}</td>
+              </tr>
+                {% endif %} 
+
+              {% if searchedMeal.meals[0].strIngredient4 %}
+              <tr>
+                <th scope="row">
+                    4
+                </th>
+                <td>
+                    {{ searchedMeal.meals[0].strIngredient4 }}
+                  </td>
+                <td>
+                    {{ searchedMeal.meals[0].strMeasure4 }}</td>
+              </tr>
+                {% endif %} 
+
+                {% if searchedMeal.meals[0].strIngredient5 %}
+                <tr>
+                  <th scope="row">
+                      5
+                  </th>
+                  <td>
+                      {{ searchedMeal.meals[0].strIngredient5 }}
+                    </td>
+                  <td>
+                      {{ searchedMeal.meals[0].strMeasure5 }}</td>
+                </tr>
+                  {% endif %} 
+
+              {% if searchedMeal.meals[0].strIngredient6 %}
+              <tr>
+                <th scope="row">
+                    6
+                </th>
+                <td>
+                    {{ searchedMeal.meals[0].strIngredient6 }}
+                  </td>
+                <td>
+                    {{ searchedMeal.meals[0].strMeasure6 }}</td>
+              </tr>
+                {% endif %} 
+
+              {% if searchedMeal.meals[0].strIngredient7 %}
+              <tr>
+                <th scope="row">
+                    7
+                </th>
+                <td>
+                    {{ searchedMeal.meals[0].strIngredient7 }}
+                  </td>
+                <td>
+                    {{ searchedMeal.meals[0].strMeasure7 }}</td>
+              </tr>
+                {% endif %} 
+
+              {% if searchedMeal.meals[0].strIngredient8 %}
+              <tr>
+                <th scope="row">
+                    8
+                </th>
+                <td>
+                    {{ searchedMeal.meals[0].strIngredient8 }}
+                  </td>
+                <td>
+                    {{ searchedMeal.meals[0].strMeasure8 }}</td>
+              </tr>
+                {% endif %}
+                
+                {% if searchedMeal.meals[0].strIngredient9 %}
+                <tr>
+                  <th scope="row">
+                      9
+                  </th>
+                  <td>
+                      {{ searchedMeal.meals[0].strIngredient9 }}
+                    </td>
+                  <td>
+                      {{ searchedMeal.meals[0].strMeasure9 }}</td>
+                </tr>
+                  {% endif %}
+                  
+                  {% if searchedMeal.meals[0].strIngredient10 %}
+                  <tr>
+                    <th scope="row">
+                        10
+                    </th>
+                    <td>
+                        {{ searchedMeal.meals[0].strIngredient10 }}
+                      </td>
+                    <td>
+                        {{ searchedMeal.meals[0].strMeasure10 }}</td>
+                  </tr>
+                    {% endif %}
+                    
+                    {% if searchedMeal.meals[0].strIngredient11 %}
+                    <tr>
+                      <th scope="row">
+                          11
+                      </th>
+                      <td>
+                          {{ searchedMeal.meals[0].strIngredient11 }}
+                        </td>
+                      <td>
+                          {{ searchedMeal.meals[0].strMeasure11 }}</td>
+                    </tr>
+                      {% endif %}
+                      
+                      {% if searchedMeal.meals[0].strIngredient12 %}
+                      <tr>
+                        <th scope="row">
+                            12
+                        </th>
+                        <td>
+                            {{ searchedMeal.meals[0].strIngredient12 }}
+                          </td>
+                        <td>
+                            {{ searchedMeal.meals[0].strMeasure12 }}</td>
+                      </tr>
+                        {% endif %}
+                        
+                        {% if searchedMeal.meals[0].strIngredient13 %}
+                        <tr>
+                          <th scope="row">
+                              13
+                          </th>
+                          <td>
+                              {{ searchedMeal.meals[0].strIngredient13 }}
+                            </td>
+                          <td>
+                              {{ searchedMeal.meals[0].strMeasure13 }}</td>
+                        </tr>
+                          {% endif %}    
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <img class="img-fluid w-75 rounded-4" src="{{searchedMeal.meals[0].strMealThumb}}" alt="Sushi">
+      </div>
+    </div>
+    <div class="w-50 mx-auto mt-5">
+      <h2 class="text-center">Instructions</h2>
+      <p class="text-center">{{searchedMeal.meals[0].strInstructions}}</p>
+      <div>
+        <h2>Source</h2>
+        <p><a href="{{searchedMeal.meals[0].strSource}}">{{searchedMeal.meals[0].strSource}}</a></p>
+      </div>
+</iframe>
+    </div>
     {% endif %}
 </body>
 </html>
